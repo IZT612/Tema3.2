@@ -40,44 +40,6 @@ public class Ejercicio07 {
 
 	}
 
-	/*
-	 * 
-	 * // Creamos la funcion "contadorPalabra", la cual recibe un String "frase" y
-	 * un String "palabra" static int contadorPalabra(String frase, String palabra)
-	 * {
-	 * 
-	 * // Creamos la variable entera "veces" donde guardaremos las veces que se
-	 * repite la palabra int veces = 0;
-	 * 
-	 * // Creamos la variable String "palabraSeparada" donde guardaremos las
-	 * palabras sacadas de la frase String palabraSeparada = "";
-	 * 
-	 * // Hacemos un bucle for que recorrerá la frase for (int i = 0; i <
-	 * frase.length(); i++) {
-	 * 
-	 * // Hacemos un bucle for que recorrerá la palabra (revisa caracter por
-	 * caracter hasta encontrar un espacio) for (; i < frase.length() &&
-	 * frase.charAt(i) != ' ' ;i++) {
-	 * 
-	 * // Guardamos el caracter en "palabraSeparada" palabraSeparada +=
-	 * frase.charAt(i);
-	 * 
-	 * }
-	 * 
-	 * // Comprobamos si "palabraSeparada" es igual a la palabra que buscamos if
-	 * (palabraSeparada.equalsIgnoreCase(palabra)) {
-	 * 
-	 * // e incrementamos "veces" veces++;
-	 * 
-	 * }
-	 * 
-	 * // Limpiamos "palabraSeparada" palabraSeparada = "";
-	 * 
-	 * }
-	 * 
-	 * // Devolvemos "veces" return veces; }
-	 */
-
 	// Creamos la funcion "contadorPalabra", la cual recibe un String "frase" y un
 	// String "palabra"
 	static int contadorPalabra(String frase, String palabra) {
