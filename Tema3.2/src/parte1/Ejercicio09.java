@@ -5,52 +5,34 @@ import java.util.Scanner;
 public class Ejercicio09 {
 
 	public static void main(String[] args) {
-		
+
 		Scanner sc = new Scanner(System.in);
-		
+
 		String mensajeInicial = "";
-		
+
 		String mensajeTraducido = "";
-		
-		String posibleJavalandia = "";
-		
+
 		System.out.println("Introduzca el mensaje a traducir");
 		mensajeInicial = sc.nextLine();
-		
-		if (mensajeInicial.indexOf("Javalín, javalón", 0) > 0) {
+
+		if (mensajeInicial.indexOf("Javalín, javalón", 0) == 0) {
 			
-			for (int i = 0; i < 15; i++) {
-				
-				posibleJavalandia += mensajeInicial.charAt(i);
-				
-			}
+			System.out.println("El mensaje está escrito en el idioma de Javalandia");
+			mensajeTraducido = mensajeInicial.substring(17);
+
+		} else if (mensajeInicial.indexOf("javalén, len, len", mensajeInicial.length() - 18) >= 0) {
 			
-			if (posibleJavalandia.equals("Javalín, javalón")) {
-				
-				for (int i = 16; i < mensajeInicial.length(); i++) {
-					
-					mensajeTraducido += mensajeInicial.charAt(i);
-					
-				}
-				
-			} else {
-				
-				for (int i = mensajeInicial.length() - 1; i < 15; i++) {
-					
-					posibleJavalandia += mensajeInicial.charAt(i);
-					
-				}
-				
-			}
+			mensajeTraducido = mensajeInicial.substring(0, mensajeInicial.length() - 18);
 			
 		} else {
 			
-			System.out.println("El mensaje no está en el idioma de Javalandia:");
 			mensajeTraducido = mensajeInicial;
 			
 		}
-		
+
 		System.out.println(mensajeTraducido);
+
+		sc.close();
 
 	}
 
