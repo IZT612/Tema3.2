@@ -22,11 +22,11 @@ public class Ejercicio14 {
 		int letra = 'a';
 
 		// Array int "abecedario" donde guardaremos todas las letras del abecedario
-		int[] abecedario = new int[26];
+		int[] abecedario = new int[27];
 
 		// Array boolean "letrasUsadas" donde guardaremos que letras del abecedario se
 		// usan en la frase
-		boolean[] letrasUsadas = new boolean[26];
+		boolean[] letrasUsadas = new boolean[27];
 
 		// Pedimos la frase y la guardamos en "frase"
 		System.out.println("Introduzca la frase");
@@ -40,6 +40,10 @@ public class Ejercicio14 {
 			letra++;
 
 		}
+
+		// Añadimos la 'ñ' aparte ya que esta no está consecutiva al resto del
+		// abecedario en el código ASCII
+		abecedario[26] = 'ñ';
 
 		// Rellenamos el array "letrasUsadas" de false
 		Arrays.fill(letrasUsadas, false);
@@ -59,7 +63,7 @@ public class Ejercicio14 {
 
 		// Recorremos "letrasUsadas"
 		for (int i = 0; i < letrasUsadas.length; i++) {
-			
+
 			// Si esa posición tiene una letra usada
 			if (letrasUsadas[i]) {
 
