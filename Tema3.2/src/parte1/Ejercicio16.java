@@ -224,12 +224,16 @@ public class Ejercicio16 {
 		return palabraDesordenada;
 	}
 
+	// Función que muestra cuantos caracteres coinciden entre los parametros String introducidos "respuesta" y "palabra"
 	static void letrasCoincidentes(String respuesta, String palabra) {
 
+		// Variable entera donde guardaremos cuantos caracteres coinciden
 		int coincidentes = 0;
 
+		// Bucle para recorrer "palabra"
 		for (int i = 0; i < palabra.length(); i++) {
 
+			// Si coincide el caracter de "palabra" con el de "respuesta" sumamos coincidentes
 			if (palabra.charAt(i) == respuesta.charAt(i)) {
 
 				coincidentes++;
@@ -238,6 +242,7 @@ public class Ejercicio16 {
 
 		}
 
+		// Mostramos los caracteres coincidentes
 		System.out.println(
 				"En tu respuesta coinciden " + coincidentes + " caracteres con respecto a la palabra o frase original");
 
